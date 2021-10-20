@@ -1,0 +1,43 @@
+body{
+    font-family:  'Bungee', Helvetica, Arial, sans-serif;
+    background-color: rgb(253, 53, 53);
+    overflow: hidden;
+    
+
+}
+
+.head{
+    transition: all 2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 248, 182);
+    margin: -10px;
+    font-size: .8em;
+    box-sizing:border-box;
+
+}
+.head li{
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+    margin-right: 10px;
+    padding: 0px 20px;
+    border: 3px #000 solid;
+    border-radius: 4px;
+}
+.head a{
+    text-decoration: none;
+    color: black;
+    
+}
+.head h1{
+    padding-left: 10px;
+}
+@media(max-width:800px) {
+    .head{
+        transition: all 2s;
+        font-size: .6em;
+
+    }
+}
