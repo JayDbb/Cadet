@@ -2,41 +2,81 @@ body{
     font-family:  'Bungee', Helvetica, Arial, sans-serif;
     background-color: rgb(253, 53, 53);
     overflow-x: hidden;
+    transition: all 3s;
     
+}
+section{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    width: 100vw;
+    background-size: cover;
+    margin-left: -5px;
+    position: relative;
+    z-index: 0;
+    margin-top: -100px;
+    margin-right: -5px;
+    transform: translateX(-.1rem)
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+#image{
+    scroll-snap-align: start;
+    margin-top: -250px;
+    display: flex;
+    position: relative;
+    padding-top: 100%;
+    margin-left: 0px;
+    margin-bottom: -450px;
+    width: 100%;
+    height: 100%;
+    background-image: url('WhatsApp Image 2021-10-20 at 10.24.04 AM.jpeg');
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: 0vw 50px;
+    z-index: 0;
+    flex: none;
 
 }
-.image{
-    margin-right: -10px;
-    margin-left: -10px;
+#image2{
+    scroll-snap-align: start;
     margin-top: -250px;
+    display: flex;
+    position: relative;
     padding-top: 100%;
+    margin-bottom: -450px;
+    width: 100%;
+    height: 100%;
     background-image: url('WhatsApp Image 2021-10-20 at 10.24.04 AM.jpeg');
-    background-size:100vw;
+    background-size:100% ;
     background-repeat: no-repeat;
-    background-position: 0vw 0px;
+    background-position: 0vw 50px;
     z-index: 0;
-
+    flex: none;
 }
 .head{
     transition: all 2s;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: rgb(255, 248, 182);
     margin: -10px;
     font-size: .8em;
     box-sizing:border-box;
+    position: relative;
     z-index: 1;
 }
 .head li{
     list-style: none;
     display: inline-block;
     margin: auto;
+    margin-top: 5px;
     margin-right: 10px;
     padding: 0px 20px;
     border: 3px #000 solid;
     border-radius: 4px;
-    background-color: burlywood;
+    background-color: rgb(252, 177, 79);
     
 }
 .head li:hover{
@@ -51,8 +91,8 @@ a{
 }
 .head h1{
     padding-left: 10px;
-    color: #fff!important;
 }
+
 @media(max-width:800px) {
     .head{
         transition: all 2s t;
@@ -61,8 +101,10 @@ a{
     }
     .head li{
         margin-bottom: 10px;
+        border-width: 2px;
+        margin-top: 10px;
     }
-    .image{
+    #image{
         margin-right: -10px;
         margin-left: -10px;
         margin-top: -250px;
