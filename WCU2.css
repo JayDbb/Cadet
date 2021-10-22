@@ -7,10 +7,14 @@ body{
 }
 #container{
     scroll-snap-type: y mandatory;
+    padding: 0px;
 }
+
+
 section{
     display: flex;
-    overflow-x: scroll;
+    
+    overflow-x:repeat;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     width: 100vw;
@@ -20,12 +24,13 @@ section{
     z-index: 0;
     margin-top: -100px;
     margin-right: -5px;
-    transform: translateX(-.1rem)
+    transform: translateX(-.1rem);
+    
 }
 ::-webkit-scrollbar{
     width: 0px;
 }
-#image{
+#image5{
     scroll-snap-align: start;
     margin-top: -250px;
     display: flex;
@@ -35,12 +40,13 @@ section{
     margin-bottom: -450px;
     width: 100%;
     height: 100%;
-    background-image: url('WhatsApp Image 2021-10-20 at 10.24.04 AM.jpeg');
+    background-image: url('WhatsApp Image 2021-10-21 at 4.45.32 PM (1).jpeg');
     background-size:100%;
     background-repeat: no-repeat;
-    background-position: 0vw 80px;
+    background-position: 0vw -350px;
     z-index: 0;
     flex: none;
+    
 
 }
 #image2{
@@ -52,10 +58,60 @@ section{
     margin-bottom: -450px;
     width: 100%;
     height: 100%;
-    background-image: url('WhatsApp Image 2021-10-21 at 9.45.41 AM.jpeg');
+    background-image: url('WhatsApp Image 2021-10-21 at 4.45.33 PM.jpeg');
     background-size:100% ;
     background-repeat: no-repeat;
-    background-position: -15px 250px;
+    background-position: -15px 150px;
+    z-index: 0;
+    flex: none;
+}
+#image{
+    scroll-snap-align: start;
+    margin-top: -250px;
+    display: flex;
+    position: relative;
+    padding-top: 100%;
+    margin-bottom: -450px;
+    width: 100%;
+    height: 100%;
+    background-image: url('WhatsApp Image 2021-10-21 at 4.45.32 PM (1).jpeg');
+    background-size:100% ;
+    background-repeat: no-repeat;
+    background-position: -15px 150px;
+    z-index: 0;
+    flex: none;
+}
+#image4{
+    scroll-snap-align: start;
+    margin-top: -250px;
+    display: flex;
+    position: relative;
+    padding-top: 100%;
+    margin-bottom: -450px;
+    padding-left: 0%;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url('WhatsApp Image 2021-10-21 at 4.45.32 PM.jpeg');
+    background-size:100% ;
+    background-repeat: repeat;
+    background-position: -15px 150px;
+    z-index: 0;
+    flex: none;
+}
+#image3{
+    scroll-snap-align: start;
+    margin-top: -250px;
+    display: flex;
+    position: relative;
+    padding-top: 100%;
+    margin-bottom: -450px;
+    width: 100%;
+    height: 100%;
+    background-image: url('WhatsApp Image 2021-10-21 at 4.45.32 PM (2).jpeg');
+    background-size:100% ;
+    background-repeat: repeat;
+    background-position: -15px -350px;
     z-index: 0;
     flex: none;
 }
@@ -73,6 +129,8 @@ section{
 }
 .head li{
     list-style: none;
+    position: relative;
+    z-index: 3;
     display: inline-block;
     margin: auto;
     margin-top: 5px;
@@ -95,53 +153,14 @@ a{
 }
 .head h1{
     padding-left: 10px;
+    position: relative;
+    z-index: 3;
 }
- .covertext{
-    position: absolute;
-    z-index: 1;
-    color: #fff;
-    background-color: rgb(0, 0, 0,.4);
-    display: flex;
-    width: 100vw;
-    height: 100%;
-    margin-top: calc(-100vh+-50vh);
-    margin-left: -10px;
-    margin-right: -15px;
-    margin-bottom: -100px;
-    scroll-snap-align: start;
+ 
 
-}
-.covertext h2{
-    display: flex;
-    margin: auto;
-    scroll-snap-align: start;
-}
-@media(max-width:800px) { 
-    .head{
-        transition: all 2s t;
-        font-size: .6em;
-
-    }
-    .head li{
-        margin-bottom: 10px;
-        border-width: 2px;
-        margin-top: 10px;
-    }
-    section{
-        display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        scroll-snap-type: x mandatory;
-        width: 100vw;
-        background-size: cover;
-        margin-left: -5px;
-        position: relative;
-        z-index: 0;
-        margin-top: -100px;
-        margin-right: -5px;
-        transform: translateX(-.1rem)
-    }
-    #image{
+@media(max-width:580px) { 
+    
+    #image5{
         scroll-snap-align: start;
         margin-top: -30px;
         display: flex;
@@ -150,7 +169,7 @@ a{
         margin-left: 0px;
         width: 100%;
         height: 50%;
-        background-image: url('WhatsApp Image 2021-10-20 at 10.24.04 AM.jpeg');
+        background-image: url('andersen stand.png');
         background-size:100%;
         background-repeat: no-repeat;
         background-position: 0vw 50px;
@@ -163,15 +182,115 @@ a{
         margin-top: -250px;
         display: flex;
         position: relative;
-        
+        padding-right: 0%;
         margin-bottom: -300px;
+        bottom: -250px;
         width: 100%;
         height: 50%;
-        background-image: url('WhatsApp Image 2021-10-21 at 9.45.41 AM.jpeg');
+        background-image: url('norank stand.png');
         background-size:100% ;
         background-repeat: no-repeat;
-        background-position: 0vw 250px;
+        background-position: 0vw 00px;
         z-index: 0;
         flex: none;
     }
+    #image{
+        scroll-snap-align: start;
+        margin-top: -250px;
+        display: flex;
+        position: relative;
+        padding-right: 0%;
+        margin-bottom: -300px;
+        bottom: -250px;
+        width: 100%;
+        height: 50%;
+        background-image: url('star 3 standing.png');
+        background-size:100% ;
+        background-repeat: no-repeat;
+        background-position: 0vw 00px;
+        z-index: 0;
+        flex: none;
+    }
+    #image3{
+        scroll-snap-align: start;
+        margin-top: -250px;
+        display: flex;
+        position: relative;
+        padding-right: 0%;
+        margin-bottom: -300px;
+        bottom: -250px;
+        width: 100%;
+        height: 50%;
+        background-image: url('cprl standing.png');
+        background-size:100% ;
+        background-repeat: no-repeat;
+        background-position: 0vw 00px;
+        z-index: 0;
+        flex: none;
+    }
+    #image4{
+        scroll-snap-align: start;
+        margin-top: -250px;
+        display: flex;
+        position: relative;
+        padding-right: 0%;
+        margin-bottom: -300px;
+        bottom: -250px;
+        width: 100%;
+        height: 50%;
+        background-image: url('sgt standing.png');
+        background-size:100% ;
+        background-repeat: no-repeat;
+        background-position: 0vw 00px;
+        z-index: 0;
+        flex: none;
+    }
+    .head{
+        transition: all 2s t;
+        font-size: .5em;
+       
+        
+    }
+    .head h1{
+        margin-left: 0px;
+    }
+    /* .head ul{
+        position: absolute;
+        display: block;
+        background-color: rgb(158, 33, 33);
+        margin-top: -10px;
+        margin-right: -100vw;
+        padding-right: -200px;
+        width: 20vw;
+        height:100vh;
+        /* top:10px;
+        left: 70vw;
+        
+        transform: translateY(390px); */
+
+        
+    .head li{
+        border: none;
+        margin-bottom: 5px;
+        background-color: rgb(252, 177, 79, 0.9);;
+    }
+    #contact{
+        margin-left: 25px;
+    }
+    section{
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        margin-left: -5px;
+        position: relative;
+        z-index: 0;
+        margin-top: -100px;
+        margin-right: -5px;
+        /* transform: translateX(-.1rem) */
+    }
+    
 }
