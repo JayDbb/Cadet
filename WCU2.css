@@ -282,9 +282,6 @@ li a{
         margin-bottom: 5px;
         background-color: rgb(252, 177, 79, 0.9);;
     }
-    #contact{
-        margin-left: 25px;
-    }
     section{
         display: flex;
         overflow-x: scroll;
